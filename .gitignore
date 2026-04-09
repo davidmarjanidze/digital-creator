@@ -1,3 +1,5 @@
 node_modules
+src/**/videos-to-upload
+src/**/videos-uploaded
 .env
 .DS_Store
