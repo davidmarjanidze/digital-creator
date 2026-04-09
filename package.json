@@ -2,9 +2,17 @@
   "name": "digital-creator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "generate:daily": "npm run build && node dist/index.js daily-relaxation-rhythm generate",
+    "upload:daily": "npm run build && node dist/index.js daily-relaxation-rhythm upload",
+    "generate:deep": "npm run build && node dist/index.js deep-relax-flow generate",
+    "upload:deep": "npm run build && node dist/index.js deep-relax-flow upload",
+    "generate:canvas": "npm run build && node dist/index.js the-revived-canvas generate",
+    "upload:canvas": "npm run build && node dist/index.js the-revived-canvas upload",
+    "test": "echo \"No tests yet\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -13,12 +21,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/davidmarjanidze/digital-creator/issues"
   },
   "homepage": "https://github.com/davidmarjanidze/digital-creator#readme",
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "typescript": "^6.0.2"
   },
   "dependencies": {

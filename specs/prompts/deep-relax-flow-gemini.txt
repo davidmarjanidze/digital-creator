@@ -1,0 +1,34 @@
+Generate similar AI video generation prompt:
+
+AI Prompt Sample
+1. Molten Velvet Morphing
+Visual Prompt (AI Video Generation)
+A macro cinematic study of deep emerald green and mustard yellow velvet geometries—spheres, toruses, and polyhedrons—slowly losing their structural integrity. The fabric texture is hyper-realistic, showing fine fibers and a soft sheen. As the shapes collide, they don't shatter but melt into one another like thick, viscous mercury. Occasional splashes of vibrant magenta and cobalt blue emerge from the center of the melting shapes, creating a rich, multi-textured fusion. The lighting is soft and diffused, catching the "fuzz" of the velvet as it liquefies.
+Audio Prompt (AI Sound Generation)
+A low-frequency, muffled textural soundscape. Soft, rhythmic "thumps" and the sound of heavy fabric sliding against itself. Faint, airy whooshes as the shapes reshape, devoid of any sharp or metallic edges. A deep, grounding brown noise floor that feels like being wrapped in a heavy blanket.
+
+2. Kinetic Plastic Heat-Mapping
+Visual Prompt (AI Video Generation)
+Translucent matte plastic forms in lime green and lemon yellow begin to soften and sag under an unseen heat source. The shapes stretch and pull like warm taffy, creating thin, vein-like filaments that connect drifting masses. The color palette transitions where the shapes stretch, revealing internal layers of neon orange and soft teal. The movement is glacial and constant. The background is a neutral, warm grey, making the high-saturation plastic "pop."
+Audio Prompt (AI Sound Generation)
+ASMR-inspired tactile sounds. The gentle, slow-motion stretching of latex or soft vinyl. Sub-bass pulses that sync with the expansion of the plastic. No melodic elements; only the organic, squelching sound of pliable materials shifting in a pressurized environment.
+
+3. The Polymer Tide
+Visual Prompt (AI Video Generation)
+A top-down view of a dense field of solid, sage-green cubes and golden-yellow spheres. A "wave" of heat passes over the frame, causing the solids to instantly liquefy into a unified, swirling river of color. The liquid has the consistency of heavy cream or thick paint. Small, bead-like droplets of lilac and crimson float on the surface, resisting the mix. The shapes eventually reform into new, abstract organic mounds before melting again in a seamless loop.
+Audio Prompt (AI Sound Generation)
+Thick, liquid movement. The sound of a heavy viscous fluid bubbling very slowly—large, soft bubbles popping with a deep "glup" sound. A soft, white-noise hiss resembling a distant steamer, providing a sense of warmth and humidity.
+
+4. Satin-Finished Blobular Synthesis
+Visual Prompt (AI Video Generation)
+A cluster of floating, amorphous blobs with a "soft-touch" plastic finish in olive and canary yellow. The blobs move with a magnetic attraction, merging upon contact into larger, complex organisms. When they merge, a brief flash of iridescent pearl white ripples across their surface. The "other" colors—burnt orange and deep violet—act as "cores" inside the translucent green and yellow shells. The camera moves in a slow, 360-degree orbit around the central mass.
+Audio Prompt (AI Sound Generation)
+Ethereal, resonant tones. Soft, tonal "bloops" that occur when two shapes merge, followed by a long, decaying reverb. The sound of a finger sliding over a smooth balloon. A shimmering, high-frequency "crystal" texture that remains at a very low volume in the background.
+
+5. Pliable Geometries in Flux
+Visual Prompt (AI Video Generation)
+A series of interlocking green and yellow plastic rings that slowly soften until they resemble rings of liquid light. As the material "melts," it forms intricate, lace-like patterns before collapsing into a single, rotating sphere of multicolored marbled wax. The colors (green, yellow, and hits of electric pink) do not mix fully but remain in distinct, beautiful ribbons. The surface remains matte and non-reflective, emphasizing the purity of the pigment.
+Audio Prompt (AI Sound Generation)
+A minimalist "crinkle" and "stretch" soundscape. The sound of soft wax being kneaded by hand. A low-pass filtered ambient drone that ebbs and flows with the size of the shapes. Completely relaxing, with a focus on the "weight" of the sound to match the density of the material.
+
+Return ONLY a JSON array of 20 strings (no markdown, no commentary). Each string must be a single xAI Grok Imagine video prompt for vertical 9:16. Do not include any people, text, UI, or logos.
