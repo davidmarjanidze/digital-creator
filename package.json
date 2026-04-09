@@ -20,5 +20,8 @@
   "homepage": "https://github.com/davidmarjanidze/digital-creator#readme",
   "devDependencies": {
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.1"
   }
 }
