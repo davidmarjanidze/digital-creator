@@ -15,6 +15,10 @@ const config = {
   videosUploadedDir: path.join(accountRoot, "videos-uploaded"),
   promptSeed: REVIVED_CANVAS_IMAGE_TO_VIDEO_PROMPT,
   mode: "image-to-video" as const,
+  instagram: {
+    accessTokenEnvVar: "INSTAGRAM_CANVAS_ACCESS_TOKEN",
+    igUserIdEnvVar: "INSTAGRAM_CANVAS_IG_USER_ID",
+  },
   picsTodoDir: path.join(accountRoot, "pics-todo"),
   picsUsedDir: path.join(accountRoot, "pics-used"),
 };

@@ -21,6 +21,10 @@ const config = {
     "prompts",
     "daily-relaxation-rhythm-gemini.txt",
   ),
+  instagram: {
+    accessTokenEnvVar: "INSTAGRAM_DAILY_ACCESS_TOKEN",
+    igUserIdEnvVar: "INSTAGRAM_DAILY_IG_USER_ID",
+  },
   mode: "text-to-video" as const,
 };
 

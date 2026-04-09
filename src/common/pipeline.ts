@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { getEnvInt } from "./env.js";
+import { getEnv, getEnvInt, getEnvOptional } from "./env.js";
 import {
   ensureDir,
   fileToDataUri,
@@ -25,6 +25,10 @@ export type AccountConfig = {
   mode: "text-to-video" | "image-to-video";
   picsTodoDir?: string;
   picsUsedDir?: string;
+  instagram?: {
+    accessTokenEnvVar: string;
+    igUserIdEnvVar: string;
+  };
 };
 
 export function getBatchSize(): number {
@@ -35,7 +39,6 @@ export function createClients() {
   return {
     gemini: new GeminiClient(),
     grok: new GrokImagineVideoGenerator(),
-    instagram: new InstagramReelsUploader(),
   };
 }
 
@@ -88,7 +91,8 @@ export async function generateVideosForAccount(
 export async function uploadVideosForAccount(
   config: AccountConfig,
 ): Promise<void> {
-  const { gemini, instagram } = createClients();
+  const { gemini } = createClients();
+  const instagram = createInstagramClient(config);
   const batchSize = getBatchSize();
 
   await ensureDir(config.videosToUploadDir);
@@ -122,6 +126,20 @@ export async function uploadVideosForAccount(
       mediaId,
     });
   }
+}
+
+function createInstagramClient(config: AccountConfig): InstagramReelsUploader {
+  const accessToken = config.instagram
+    ? (getEnvOptional(config.instagram.accessTokenEnvVar) ??
+      getEnv("INSTAGRAM_ACCESS_TOKEN"))
+    : getEnv("INSTAGRAM_ACCESS_TOKEN");
+
+  const igUserId = config.instagram
+    ? (getEnvOptional(config.instagram.igUserIdEnvVar) ??
+      getEnv("INSTAGRAM_IG_USER_ID"))
+    : getEnv("INSTAGRAM_IG_USER_ID");
+
+  return new InstagramReelsUploader({ accessToken, igUserId });
 }
 
 type GenerationItem = { prompt: string; imageDataUri?: string };

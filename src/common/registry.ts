@@ -41,6 +41,10 @@ export function getAccountModule(name: string): AccountModule {
         "prompts",
         "daily-relaxation-rhythm-gemini.txt",
       ),
+      instagram: {
+        accessTokenEnvVar: "INSTAGRAM_DAILY_ACCESS_TOKEN",
+        igUserIdEnvVar: "INSTAGRAM_DAILY_IG_USER_ID",
+      },
       mode: "text-to-video",
     });
   }
@@ -56,6 +60,10 @@ export function getAccountModule(name: string): AccountModule {
         "prompts",
         "deep-relax-flow-gemini.txt",
       ),
+      instagram: {
+        accessTokenEnvVar: "INSTAGRAM_DEEP_ACCESS_TOKEN",
+        igUserIdEnvVar: "INSTAGRAM_DEEP_IG_USER_ID",
+      },
       mode: "text-to-video",
     });
   }
@@ -66,6 +74,10 @@ export function getAccountModule(name: string): AccountModule {
       videosUploadedDir: path.join(accountRoot, "videos-uploaded"),
       promptSeed: REVIVED_CANVAS_IMAGE_TO_VIDEO_PROMPT,
       mode: "image-to-video",
+      instagram: {
+        accessTokenEnvVar: "INSTAGRAM_CANVAS_ACCESS_TOKEN",
+        igUserIdEnvVar: "INSTAGRAM_CANVAS_IG_USER_ID",
+      },
       picsTodoDir: path.join(accountRoot, "pics-todo"),
       picsUsedDir: path.join(accountRoot, "pics-used"),
     });

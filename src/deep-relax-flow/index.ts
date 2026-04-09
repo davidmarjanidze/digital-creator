@@ -21,6 +21,10 @@ const config = {
     "prompts",
     "deep-relax-flow-gemini.txt",
   ),
+  instagram: {
+    accessTokenEnvVar: "INSTAGRAM_DEEP_ACCESS_TOKEN",
+    igUserIdEnvVar: "INSTAGRAM_DEEP_IG_USER_ID",
+  },
   mode: "text-to-video" as const,
 };
 
